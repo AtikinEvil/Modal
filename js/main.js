@@ -9,11 +9,11 @@ function callModal() {
 
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
-            modal.classList.remove('active')
+            modal.classList.remove('active');
         } else if (e.target === modalClose) {
-            modal.classList.remove('active')
-        }
+            modal.classList.remove('active');
+        };
     });
-}
+};
 
 callModal()
