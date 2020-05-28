@@ -8,9 +8,7 @@ function callModal() {
     };
 
     modal.onclick = function(e)  {
-        if (e.target === modal) {
-            modal.classList.remove('active')
-        } else if (e.target === modalClose) {
+        if (e.target === modal || e.target === modalClose) {
             modal.classList.remove('active')
         }
     };
