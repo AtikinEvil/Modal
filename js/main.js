@@ -4,16 +4,16 @@ function callModal() {
         modalClose = document.querySelector('.modal__close');
         
     modalTrigger.onclick = function() {
-        modal.classList.add('active')
-    };
+        modal.classList.add('active');
+    }
 
     modal.onclick = function(e)  {
         if (e.target === modal || e.target === modalClose) {
-            modal.classList.remove('active')
+            modal.classList.remove('active');
         }
-    };
+    }
 }
 
-callModal()
+callModal();
 
 /* хотел вместо onclick использовать addEventListener, но он не работал в explorer */
