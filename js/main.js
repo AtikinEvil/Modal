@@ -3,11 +3,11 @@ function callModal() {
         modal = document.querySelector('.modal'),
         modalClose = document.querySelector('.modal__close');
         
-    modalTrigger.onclick = function() {
+    modalTrigger.onclick = () => {
         modal.classList.add('active');
     }
 
-    modal.onclick = function(e)  {
+    modal.onclick = e => {
         if (e.target === modal || e.target === modalClose) {
             modal.classList.remove('active');
         }
